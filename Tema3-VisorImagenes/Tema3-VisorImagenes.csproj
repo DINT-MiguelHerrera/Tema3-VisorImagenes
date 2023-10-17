@@ -10,6 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="episodioIV.jpg" />
     <None Remove="foto.jpg" />
     <None Remove="info.png" />
   </ItemGroup>
@@ -19,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="episodioIV.jpg" />
     <Resource Include="foto.jpg" />
     <Resource Include="info.png" />
   </ItemGroup>

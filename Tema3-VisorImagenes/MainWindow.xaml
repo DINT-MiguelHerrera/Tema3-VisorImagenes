@@ -5,38 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tema3_VisorImagenes"
         mc:Ignorable="d"
-        Title="Visor de Imágenes" Height="450" Width="800">
+        Title="Visor de Imágenes" Height="600" Width="700">
     <DockPanel LastChildFill="True">
+        <DockPanel Background="LightBlue" DockPanel.Dock="Bottom" Margin="10">
+            <TextBlock Text="Nº de imágenes: 8" FontSize="20" DockPanel.Dock="Left" HorizontalAlignment="Left" Margin="10"></TextBlock>
+            <TextBlock Text="Diseñado por Miguel Herrera" FontSize="20" DockPanel.Dock="Right" HorizontalAlignment="Right" Margin="10"></TextBlock>
+        </DockPanel>
+        <Border DockPanel.Dock="Right" BorderBrush="Black" BorderThickness="3" CornerRadius="3" Background="LightGreen" Margin="10">
+            <DockPanel LastChildFill="True">
+                <Button Content="Añadir imagen" DockPanel.Dock="Top" Margin="5"></Button>
+                <Button Content="Eliminar imagen" DockPanel.Dock="Top" Margin="5"></Button>
+                <Button Content="Eliminar todas" DockPanel.Dock="Top" Margin="5"></Button>
+                <Button Content="Rotar" DockPanel.Dock="Bottom" Margin="5"></Button>
+                <Button Content="Recortar" DockPanel.Dock="Bottom" Margin="5"></Button>
+                <TextBlock Margin="10"></TextBlock>
+            </DockPanel>
+        </Border>
+        
         <DockPanel DockPanel.Dock="Left">
-            <TextBlock DockPanel.Dock="Top" FontWeight="Bold" FontSize="40" Text="Visor de imágenes" HorizontalAlignment="Center"></TextBlock>
-            <WrapPanel DockPanel.Dock="Top" Height="100">
-                <Image Source="/foto.jpg" Width="60"></Image>
-                <Image Source="/foto.jpg" Width="60"></Image>
-                <Image Source="/foto.jpg" Width="60"></Image>
-                <Image Source="/foto.jpg" Width="60"></Image>
-                <Image Source="/foto.jpg" Width="60"></Image>
-                <Image Source="/foto.jpg" Width="60"></Image>
-                <Image Source="/foto.jpg" Width="60"></Image>
-                <Image Source="/foto.jpg" Width="60"></Image>
+            <TextBlock Text="Visor de imágenes" DockPanel.Dock="Top" HorizontalAlignment="Center" FontSize="40"/>
+            <WrapPanel >
+                <Image Source="/episodioIV.jpg" Width="135"></Image>
+                <Image Source="/episodioIV.jpg" Width="135"></Image>
+                <Image Source="/episodioIV.jpg" Width="135"></Image>
+                <Image Source="/episodioIV.jpg" Width="135"></Image>
+                <Image Source="/episodioIV.jpg" Width="135"></Image>
+                <Image Source="/episodioIV.jpg" Width="135"></Image>
+                <Image Source="/episodioIV.jpg" Width="135"></Image>
+                <Image Source="/episodioIV.jpg" Width="135"></Image>
+                
+                
             </WrapPanel>
         </DockPanel>
-
-        
-            <Border BorderBrush="Black" BorderThickness="3" CornerRadius="3" Margin="10" DockPanel.Dock="Right">
-                <DockPanel Background="LightGreen">
-                    <Button DockPanel.Dock="Top" Margin="10">Añadir imagen</Button>
-                    <Button DockPanel.Dock="Top" Margin="10">Eliminar imagen</Button>
-                    <Button DockPanel.Dock="Top" Margin="10">Eliminar todas</Button>
-                    <Button DockPanel.Dock="Bottom" Margin="10">Rotar</Button>
-                    <Button DockPanel.Dock="Bottom" Margin="10">Recortar</Button>
-                    <TextBlock></TextBlock>
-                </DockPanel>
-            </Border>
-
-        
-        <StackPanel DockPanel.Dock="Bottom" Background="LightBlue" Height="40">
-            <TextBlock Text="Nº de imagenes: 8" FontSize="20"></TextBlock>
-            <TextBlock Text="Diseñado por Miguel Herrera" FontSize="20"></TextBlock>
-        </StackPanel>
     </DockPanel>
 </Window>
